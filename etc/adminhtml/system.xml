@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="dev">
+            <group id="media_fallback" type="text" translate="label" showInDefault="1">
+                <label>Media Fallback</label>
+                <field id="enabled" type="select" translate="label" sortOrder="10" showInDefault="1">
+                    <label>Enable Media Fallback</label>
+                    <source_model>\Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="fallback_base_url" type="text" translate="label" sortOrder="20" showInDefault="1">
+                    <label>Media Fallback Base URL</label>
+                    <depends>
+                        <field id="*/*/enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

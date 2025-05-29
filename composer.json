@@ -1,0 +1,20 @@
+{
+  "name": "lbajsarowicz/module-media-fallback",
+  "version": "1.0.3",
+  "description": "Lookup for missing media files fallback.",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "LBajsarowicz\\MediaFallback\\": ""
+    }
+  }
+}
