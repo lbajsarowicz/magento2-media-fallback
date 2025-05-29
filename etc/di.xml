@@ -6,9 +6,4 @@
                 type="LBajsarowicz\MediaFallback\Plugin\FileTransferHandleMissingMediaPlugin"
                 sortOrder="10"/>
     </type>
-    <type name="Mirasvit\Seo\Model\MediaStorage\Media">
-        <plugin name="LBajsarowicz_MediaFallback::mirasvit-seo-media-storage-missing-media"
-                type="LBajsarowicz\MediaFallback\Plugin\MirasvitSeoMediaStorageMissingMediaPlugin"
-                sortOrder="10"/>
-    </type>
 </config>
